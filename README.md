@@ -41,22 +41,33 @@ Make sure to have the following dependencies installed:
 
 ## Usage 📌
 Clone the repository and navigate to the project folder.
+
 *python instance.py*
 
-## Key Controls:
+## Key Controls: 🕹️
 **'t':** Toggle between normal and black background modes.
+
 **'q':** Quit the program.
+
 **'s':** Save the current frame as an image.
+
 **'p':** Pause the video feed (press any key to resume).
 
 ## Theory Insight 💡
 **Mask R-CNN Overview:**
-Mask R-CNN is a state-of-the-art **pre-trained deep learning model** for instance segmentation. It is capable of not only detecting objects in an image but also generating pixel-wise segmentation masks for each detected object. The model was trained on a large dataset **(COCO dataset)** and is pre-configured to recognize various objects with high accuracy. When applied to new input data, it outputs bounding boxes around detected objects, along with the pixel-level segmentation masks for each individual object.
+Mask R-CNN is a state-of-the-art **pre-trained deep learning model** for instance segmentation. It is capable of not only detecting objects in an image but also generating pixel-wise segmentation masks for each detected object. 
 
-#### Workflow:
+The model was trained on a large dataset **(COCO dataset)** and is pre-configured to recognize various objects with high accuracy. When applied to new input data, it outputs bounding boxes around detected objects, along with the pixel-level segmentation masks for each individual object.
+
+### Workflow:
 **Input:** The input is a live feed from the webcam (video frames).
+
 **Segmentation:** For each frame captured from the webcam, the pre-trained Mask R-CNN model segments detected objects and generates corresponding segmentation masks.
+
 **Background Toggle:** The user can toggle between two background modes:
+
 **Normal View:** The original webcam feed with bounding boxes around the detected objects.
+
 **Black Background:** The background is replaced with a solid black background, while the segmented objects are retained.
+
 **FPS Calculation:** The Frames Per Second (FPS) is calculated in real-time to monitor the performance of the segmentation process. It is displayed in the top-left corner of the video feed, providing a measure of how efficiently the system is processing the video stream.
