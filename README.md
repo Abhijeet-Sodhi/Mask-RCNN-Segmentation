@@ -14,6 +14,8 @@ https://github.com/user-attachments/assets/f2a49dab-4fe6-42d2-98ad-c6370c9f2365
 ## The Code files: 📄
 **instance.py:** Contains the core logic for instance segmentation using Mask R-CNN, including background toggling functionality.
 
+**mask_rcnn_coco.h5**: the pre-trained model downloaded from https://github.com/matterport/Mask_RCNN/releases/tag/v2.0
+
 ## Functionality ⚙️
 
 **Real-Time Segmentation:** The Mask R-CNN model segments objects in the webcam feed, drawing bounding boxes around detected objects.
